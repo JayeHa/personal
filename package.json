@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "personal",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -9,7 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "dev:p": "turbo run dev --filter portfolio",
+    "dev:resume": "turbo run dev --filter resume",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
