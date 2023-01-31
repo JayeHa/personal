@@ -4,16 +4,10 @@
 
 @layer components {
   mark {
-    @apply bg-zinc-800 text-white px-2 rounded-lg;
+    @apply bg-zinc-800 text-white px-2 rounded-lg whitespace-nowrap;
   }
 
-  a[target="_blank"]:not([href="#"])::after {
-    content: "";
-    background: url("../assets/images/open_in_new.svg") center/cover;
-    position: absolute;
-    top: 4px;
-    margin-left: 6px;
-    width: 16px;
-    height: 16px;
+  a {
+    @apply hover:underline;
   }
 }
