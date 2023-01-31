@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  mark {
+    @apply bg-zinc-800 text-white px-2 rounded-lg;
+  }
+}
