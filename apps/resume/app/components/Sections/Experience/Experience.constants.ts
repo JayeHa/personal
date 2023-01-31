@@ -21,11 +21,11 @@ export const experiences = [
           "Toast WYSIWYG",
           "무한스크롤 기능 구현",
           "인게임 페이지 구현",
-          "i18next를 활용한 다국어 지원 대응 🇰🇷🇬🇧",
+          "다국어 지원 대응 🇰🇷🇬🇧",
         ],
       },
       {
-        title: "몰라몰라개복치",
+        title: "몰라몰라 개복치",
         url: "",
         subtitle: "각종 짤뽑기, 테스트, 게임 등",
         skills: [
@@ -38,7 +38,7 @@ export const experiences = [
         description: [
           "프론트엔드 인터페이스 구현",
           "초기 공통 컴포넌트 작업 (기여도 100%)",
-          "i18next를 활용한 다국어 지원 대응 🇰🇷🇬🇧",
+          "다국어 지원 대응 🇰🇷🇬🇧",
           "테스트 코드 작성",
         ],
       },

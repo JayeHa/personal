@@ -10,7 +10,7 @@ const ExperienceCard = ({ item }: ExperienceCardProps) => {
   return (
     <article className="relative pl-4 pb-16 ml-1 border-l-2 border-gray-300 last:pb-0 md:flex md:gap-2">
       <header className="relative -top-1 mb-2 md:w-2/6">
-        <h2 className="inline-block text-xl font-medium tracking-wide">
+        <h2 className="inline-block text-xl font-medium tracking-wide md:text-2xl md:mb-2">
           <a href={url} target="_blank" rel="noreferrer">
             {companyName}
           </a>
@@ -20,7 +20,7 @@ const ExperienceCard = ({ item }: ExperienceCardProps) => {
 
         <dl>
           <dt className="sr-only">근무기간</dt>
-          <dd className="text-xs text-gray-500">{period}</dd>
+          <dd className="text-xs text-gray-500 md:text-sm">{period}</dd>
         </dl>
       </header>
 
@@ -29,7 +29,7 @@ const ExperienceCard = ({ item }: ExperienceCardProps) => {
           <div key={project.title} className="relative mb-7 last:mb-0">
             <span className="absolute top-3.5 -left-[22px] w-2 h-1 rounded-full border-t-2 border-gray-300 md:hidden" />
 
-            <h3 className="text-lg font-medium">{project.title}</h3>
+            <h3 className="text-lg font-medium md:text-xl">{project.title}</h3>
 
             {project.url && (
               <a
@@ -42,7 +42,9 @@ const ExperienceCard = ({ item }: ExperienceCardProps) => {
               </a>
             )}
 
-            <p className="text-sm text-gray-600">{project.subtitle}</p>
+            <p className="text-sm text-gray-600 md:mt-1 md:text-base">
+              {project.subtitle}
+            </p>
 
             <ul className="flex flex-wrap gap-x-2 gap-y-1 mt-2">
               {project.skills.map((skill) => (
@@ -57,7 +59,10 @@ const ExperienceCard = ({ item }: ExperienceCardProps) => {
 
             <ul className="mt-2">
               {project.description.map((desc) => (
-                <li key={desc} className="relative pl-3 text-sm">
+                <li
+                  key={desc}
+                  className="relative pl-3 text-sm md:text-base md:mb-1 last:mb-0"
+                >
                   <span
                     className="block absolute bg-gray-800 w-1 h-1 rounded-full top-3 left-0"
                     aria-hidden
