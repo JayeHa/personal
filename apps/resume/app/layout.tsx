@@ -1,5 +1,5 @@
-import "./font-face.css";
-import "./globals.css";
+import "./styles/font-face.css";
+import "./styles/globals.css";
 
 export default function RootLayout({
   children,
