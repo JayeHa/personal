@@ -9,7 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   rules: {
-    "import/prefer-default-export": 1,
+    "import/prefer-default-export": "off",
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "prettier/prettier": 0,
     "import/extensions": 0,
