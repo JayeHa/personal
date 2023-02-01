@@ -15,4 +15,8 @@
     @apply relative bottom-1 text-sm text-gray-600;
     content: "↗️";
   }
+
+  .list-dotted li {
+    @apply relative pl-3 after:absolute after:top-3 after:left-0 after:block after:h-1 after:w-1 after:rounded-full after:bg-gray-800 last:mb-0 md:mb-1;
+  }
 }
