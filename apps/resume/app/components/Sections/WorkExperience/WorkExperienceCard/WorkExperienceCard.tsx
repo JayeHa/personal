@@ -9,8 +9,8 @@ const WorkExperienceCard = ({ item }: WorkExperienceCardProps) => {
       <header className="relative -top-1 mb-2 md:w-2/6">
         <h3 className="inline-block text-xl font-medium tracking-wide md:mb-2 md:text-2xl">
           <a
+            className="open-in-new"
             href={url}
-            className="after:relative after:bottom-1 after:text-sm after:text-gray-600 after:content-['↗️']"
             target="_blank"
             rel="noreferrer"
           >
