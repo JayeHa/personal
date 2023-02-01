@@ -7,7 +7,7 @@ export interface SectionProps {
 const Section = ({ title, children }: SectionProps & PropsWithChildren) => {
   return (
     <section className="mb-12 md:mb-20">
-      <h2 className="font-bold text-2xl mb-3 md:mb-8 tracking-tight md:text-4xl">
+      <h2 className="mb-3 text-2xl font-bold tracking-tight md:mb-8 md:text-4xl">
         {title}
       </h2>
       {children}
