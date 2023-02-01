@@ -1,4 +1,4 @@
-import { Cover, Experience, Projects, Skills } from "./components";
+import { Cover, Skills, WorkExperience } from "./components";
 
 export default function Home() {
   return (
@@ -6,8 +6,7 @@ export default function Home() {
       <Cover />
 
       <Skills />
-      <Experience />
-      <Projects />
+      <WorkExperience />
     </main>
   );
 }

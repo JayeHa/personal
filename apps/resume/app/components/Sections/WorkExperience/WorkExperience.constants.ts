@@ -1,4 +1,4 @@
-export const experiences = [
+export const workExperiences = [
   {
     companyName: "빅픽처팀",
     url: "http://bigpicture.team/",
@@ -26,7 +26,6 @@ export const experiences = [
       },
       {
         title: "몰라몰라 개복치",
-        url: "",
         subtitle: "각종 짤뽑기, 테스트, 게임 등",
         skills: [
           "Next.js",
@@ -92,4 +91,4 @@ export const experiences = [
       },
     ],
   },
-] as const;
+];
