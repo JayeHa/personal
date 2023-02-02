@@ -10,7 +10,7 @@ const TestimonialCard = ({
   text,
 }: Utils.ElementType<typeof testimonials>) => {
   return (
-    <article className="min-w-[248px] max-w-xs rounded-2xl p-6 pt-8 shadow-xl md:w-72">
+    <article className="min-w-[248px] max-w-xs rounded-2xl border bg-white p-6 shadow-md md:w-72">
       <header className="relative">
         <h3 className="sr-only">{name}님의 추천서</h3>
 
@@ -22,7 +22,7 @@ const TestimonialCard = ({
 
       <div className="no-scroll-bar h-48 overflow-y-scroll pb-6">
         <Icon
-          className="rotate-180 fill-slate-400 "
+          className="rotate-180 fill-gray-600"
           name="FormatQuote"
           aria-hidden
         />
@@ -31,23 +31,22 @@ const TestimonialCard = ({
         </p>
       </div>
 
-      <footer className="border-t pt-3">
+      <footer className="mt-5 border-t pt-2">
         <div className="flex gap-4">
           <Image
             className="h-12 w-12 rounded-full"
             src={avatarSrc}
+            width={48}
+            height={48}
             alt={name}
           />
 
-          <a
-            className="flex flex-col justify-center"
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <strong className="mb-1">{name}</strong>
+          <div className="flex flex-col justify-center">
+            <a href={link} target="_blank" rel="noreferrer">
+              <strong className="mb-1">{name}</strong>
+            </a>
             <span className="text-xs text-gray-400">{jobTitle}</span>
-          </a>
+          </div>
         </div>
       </footer>
     </article>
