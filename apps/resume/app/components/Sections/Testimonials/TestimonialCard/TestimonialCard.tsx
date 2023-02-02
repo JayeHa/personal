@@ -10,7 +10,7 @@ const TestimonialCard = ({
   text,
 }: Utils.ElementType<typeof testimonials>) => {
   return (
-    <article className="w-72 rounded-2xl border bg-white p-6 shadow-sm">
+    <article className="w-72 min-w-[248px] rounded-2xl border bg-white p-6 shadow-sm">
       <header className="relative">
         <h3 className="sr-only">{name}님의 추천서</h3>
 
@@ -20,7 +20,7 @@ const TestimonialCard = ({
         />
       </header>
 
-      <div className="no-scroll-bar h-48 overflow-y-scroll pb-6">
+      <div className="no-scroll-bar h-52 overflow-y-scroll pb-6">
         <Icon
           className="rotate-180 fill-gray-600"
           name="FormatQuote"
