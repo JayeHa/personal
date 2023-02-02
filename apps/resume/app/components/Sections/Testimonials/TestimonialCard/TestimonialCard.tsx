@@ -10,7 +10,7 @@ const TestimonialCard = ({
   text,
 }: Utils.ElementType<typeof testimonials>) => {
   return (
-    <article className="min-w-[248px] max-w-xs rounded-2xl border bg-white p-6 shadow-md md:w-72">
+    <article className="w-72 rounded-2xl border bg-white p-6 shadow-sm">
       <header className="relative">
         <h3 className="sr-only">{name}님의 추천서</h3>
 
