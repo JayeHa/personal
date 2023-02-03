@@ -20,15 +20,13 @@ const TestimonialCard = ({
         />
       </header>
 
-      <div className="no-scroll-bar h-52 overflow-y-scroll pb-6">
+      <div className="h-52 overflow-hidden pb-6">
         <Icon
           className="rotate-180 fill-gray-600"
           name="FormatQuote"
           aria-hidden
         />
-        <p className="whitespace-pre-line break-keep text-sm text-slate-800">
-          {text}
-        </p>
+        <p className="break-keep text-sm text-slate-800 line-clamp-7">{text}</p>
       </div>
 
       <footer className="mt-5 border-t pt-2">
