@@ -6,7 +6,10 @@
   html {
     @apply overflow-x-hidden;
     max-width: 100vw;
-    contain: paint;
+  }
+
+  body {
+    @apply relative w-full overflow-x-hidden;
   }
 
   mark {
