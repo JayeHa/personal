@@ -19,6 +19,14 @@
 }
 
 @layer components {
+  .main-section {
+    @apply px-4 md:mx-auto md:max-w-5xl md:px-24;
+  }
+
+  .main-section-full {
+    @apply md:mx-auto md:max-w-5xl md:px-24;
+  }
+
   a[target="_blank"].open-in-new::after {
     @apply relative bottom-1 text-sm text-gray-600;
     content: "↗️";
