@@ -4,8 +4,8 @@ export const testimonials = [
   {
     name: "서유라",
     jobTitle: "프로덕트(UX/UI) 디자이너",
-    avatarSrc: AvatarYuraSeo,
-
+    avatar: AvatarYuraSeo,
+    company: "더에이아이랩",
     link: "https://www.linkedin.com/in/yullo/",
     text: `저는 TheAILab에서 하정원님과 긴밀하게 협업한 프로덕트팀 리더였으며, 기회가 된다면 다시 함께하고 싶은 사람으로서 정원님을 적극 추천드립니다.
 
@@ -18,7 +18,8 @@ export const testimonials = [
   {
     name: "작업중",
     jobTitle: "개발자",
-    avatarSrc: "https://github.com/github.png?size=48",
+    avatar: "https://github.com/github.png?size=48",
+    company: "빅픽처팀",
     link: "https://www.linkedin.com/in/yullo/",
     text: `아직 하는중`,
   },

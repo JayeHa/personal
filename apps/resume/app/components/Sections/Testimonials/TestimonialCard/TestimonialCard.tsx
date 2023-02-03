@@ -5,35 +5,33 @@ import type { testimonials } from "../Testimonials.constants";
 const TestimonialCard = ({
   name,
   jobTitle,
-  avatarSrc,
+  avatar,
+  company,
   link,
   text,
 }: Utils.ElementType<typeof testimonials>) => {
   return (
-    <article className="w-72 min-w-[248px] rounded-2xl border bg-white p-6 shadow-sm">
+    <article className="rounded-2xl border bg-white p-6 pt-3">
       <header className="relative">
         <h3 className="sr-only">{name}님의 추천서</h3>
-
-        <span
-          className="absolute bottom-0 left-0 h-2 w-full translate-y-full bg-gradient-to-b from-white to-transparent"
-          aria-hidden
-        />
       </header>
 
-      <div className="h-52 overflow-hidden pb-6">
+      <div className="h-56 overflow-hidden pb-6">
         <Icon
-          className="rotate-180 fill-gray-600"
+          className="relative -left-1.5 rotate-180 fill-gray-600 opacity-70"
           name="FormatQuote"
           aria-hidden
         />
-        <p className="break-keep text-sm text-slate-800 line-clamp-7">{text}</p>
+        <p className="break-keep text-sm font-light leading-6 text-slate-800 line-clamp-7">
+          {text}
+        </p>
       </div>
 
-      <footer className="mt-5 border-t pt-2">
+      <footer className="mt-5 border-t pt-4">
         <div className="flex gap-4">
           <Image
             className="h-12 w-12 rounded-full"
-            src={avatarSrc}
+            src={avatar}
             width={48}
             height={48}
             alt={name}
@@ -43,7 +41,14 @@ const TestimonialCard = ({
             <a href={link} target="_blank" rel="noreferrer">
               <strong className="mb-1">{name}</strong>
             </a>
-            <span className="text-xs text-gray-400">{jobTitle}</span>
+            <dl>
+              <dt className="sr-only">소속</dt>
+              <dd className="text-xs text-gray-500">{company}</dd>
+            </dl>
+            <dl>
+              <dt className="sr-only">직무</dt>
+              <dd className="text-xs text-gray-400">{jobTitle}</dd>
+            </dl>
           </div>
         </div>
       </footer>
