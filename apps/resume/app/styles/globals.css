@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .no-scroll-bar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scroll-bar {
-    -ms-overflow-style: none; /* IE and 엣지 */
-    scrollbar-width: none; /* 파이어폭스 */
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+    max-width: 100vw;
+    contain: paint;
   }
 
   mark {
@@ -18,7 +16,9 @@
   a {
     @apply hover:underline;
   }
+}
 
+@layer components {
   a[target="_blank"].open-in-new::after {
     @apply relative bottom-1 text-sm text-gray-600;
     content: "↗️";
@@ -26,5 +26,15 @@
 
   .list-dotted li {
     @apply relative pl-3 after:absolute after:top-3 after:left-0 after:block after:h-1 after:w-1 after:rounded-full after:bg-gray-800 last:mb-0 md:mb-1;
+  }
+}
+
+@layer utilities {
+  .no-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scroll-bar {
+    -ms-overflow-style: none; /* IE and 엣지 */
+    scrollbar-width: none; /* 파이어폭스 */
   }
 }
