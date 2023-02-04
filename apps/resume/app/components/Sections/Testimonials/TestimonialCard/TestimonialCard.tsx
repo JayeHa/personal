@@ -18,11 +18,11 @@ const TestimonialCard = ({
 
       <div className="h-56 overflow-hidden pb-6">
         <Icon
-          className="relative -left-1.5 rotate-180 fill-gray-600 opacity-70"
+          className="relative -left-1.5 rotate-180 fill-gray-600 opacity-40"
           name="FormatQuote"
           aria-hidden
         />
-        <p className="break-keep text-sm font-light leading-6 text-slate-800 line-clamp-7">
+        <p className="whitespace-pre-line break-keep text-sm font-light leading-6  line-clamp-7">
           {text}
         </p>
       </div>
