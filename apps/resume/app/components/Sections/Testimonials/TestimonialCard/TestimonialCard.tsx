@@ -1,5 +1,5 @@
-import Icon from "@/app/components/Icon";
 import Image from "next/image";
+import Icon from "@/components/Icon";
 import type { testimonials } from "../Testimonials.constants";
 
 const TestimonialCard = ({
