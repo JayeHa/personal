@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "dev:resume": "turbo run dev --filter resume",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo run storybook --filter=./packages/ui"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
