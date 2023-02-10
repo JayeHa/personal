@@ -5,8 +5,10 @@ module.exports = {
     "airbnb",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
+    "next/babel",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
   ],
   rules: {
     "import/prefer-default-export": "off",
