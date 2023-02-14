@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Icon from "@/components/Icon";
+import Image from "next/image";
 import type { testimonials } from "../Testimonials.constants";
 
 const TestimonialCard = ({
@@ -22,7 +22,7 @@ const TestimonialCard = ({
           name="FormatQuote"
           aria-hidden
         />
-        <p className="whitespace-pre-line break-keep text-sm font-light leading-6  line-clamp-7">
+        <p className="whitespace-pre-line break-keep text-sm font-light leading-6 line-clamp-7">
           {text}
         </p>
       </div>
@@ -39,15 +39,15 @@ const TestimonialCard = ({
 
           <div className="flex flex-col justify-center">
             <a href={link} target="_blank" rel="noreferrer">
-              <strong className="mb-1">{name}</strong>
+              <strong className="mb-1 line-clamp-1">{name}</strong>
             </a>
             <dl>
               <dt className="sr-only">소속</dt>
-              <dd className="text-xs text-gray-500">{company}</dd>
+              <dd className="text-xs text-gray-500 line-clamp-1">{company}</dd>
             </dl>
             <dl>
               <dt className="sr-only">직무</dt>
-              <dd className="text-xs text-gray-400">{jobTitle}</dd>
+              <dd className="text-xs text-gray-400 line-clamp-1">{jobTitle}</dd>
             </dl>
           </div>
         </div>
