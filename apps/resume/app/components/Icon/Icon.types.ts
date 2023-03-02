@@ -1,4 +1,4 @@
-import type * as iconFiles from "@/assets/icons";
+import type * as iconFiles from "@assets/icons";
 
 export interface IconProps {
   name: keyof typeof iconFiles;

@@ -6,7 +6,6 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:@typescript-eslint/recommended",
-    "next/babel",
     "next/core-web-vitals",
     "plugin:prettier/recommended",
   ],

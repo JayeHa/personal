@@ -1,4 +1,4 @@
-import * as iconFiles from "@/assets/icons";
+import * as iconFiles from "@assets/icons";
 import type { IconProps } from "./Icon.types";
 
 const Icon = ({

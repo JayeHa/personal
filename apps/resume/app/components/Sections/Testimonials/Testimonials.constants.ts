@@ -1,4 +1,4 @@
-import { AvatarYuraSeo } from "@/assets/images";
+import { AvatarYuraSeo } from "@assets/images";
 
 export const testimonials = [
   {
