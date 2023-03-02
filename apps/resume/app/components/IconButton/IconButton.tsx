@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from "react";
+import type { ButtonHTMLAttributes } from "react";
 import Icon from "../Icon";
 import type IconButtonProps from "./IconButton.types";
 
@@ -12,7 +12,7 @@ const IconButton = ({
   return (
     <button
       type={type}
-      className={`inline-flex items-center justify-center rounded-full border p-1 shadow-md hover:bg-slate-600 hover:fill-slate-50  ${
+      className={`inline-flex items-center justify-center rounded-full border p-1 shadow-md hover:bg-slate-600 hover:fill-slate-50  disabled:cursor-not-allowed disabled:bg-white disabled:fill-slate-200 ${
         className ?? ""
       }`}
       {...props}

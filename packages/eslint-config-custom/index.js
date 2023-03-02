@@ -43,5 +43,6 @@ module.exports = {
     "no-underscore-dangle": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "react/button-has-type": 0,
   },
 };
