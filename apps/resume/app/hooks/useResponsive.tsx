@@ -9,7 +9,7 @@ const useResponsive = () => {
       setIsMobile(matches);
     };
 
-    const media = window.matchMedia(`(max-width: ${BREAKPOINT_MOBILE})`);
+    const media = window.matchMedia(`(max-width: ${BREAKPOINT_MOBILE}px)`);
     media.addEventListener("change", updateMatchMedia);
     setIsMobile(media.matches);
 
