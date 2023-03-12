@@ -1,15 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "~/components/Icon";
 import type { testimonials } from "../Testimonials.constants";
 
 const TestimonialCard = ({
+  index,
   name,
   jobTitle,
   avatar,
   company,
   link,
   text,
-}: Utils.ElementType<typeof testimonials>) => {
+}: Utils.ElementType<typeof testimonials> & { index: number }) => {
   return (
     <article className="rounded-2xl border bg-white p-6 pt-3">
       <header className="relative">
@@ -17,14 +19,16 @@ const TestimonialCard = ({
       </header>
 
       <div className="h-56 overflow-hidden pb-6">
-        <Icon
-          className="relative -left-1.5 rotate-180 fill-gray-600 opacity-40"
-          name="FormatQuote"
-          aria-hidden
-        />
-        <p className="whitespace-pre-line break-keep text-sm font-light leading-6 line-clamp-7">
-          {text}
-        </p>
+        <Link href={`/testimonial/${index}`}>
+          <Icon
+            className="relative -left-1.5 rotate-180 fill-gray-600 opacity-40"
+            name="FormatQuote"
+            aria-hidden
+          />
+          <p className="whitespace-pre-line break-keep text-sm font-light leading-6 line-clamp-7">
+            {text}
+          </p>
+        </Link>
       </div>
 
       <footer className="mt-5 border-t pt-4">

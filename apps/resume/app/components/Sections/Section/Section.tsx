@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from "react";
 
 export interface SectionProps {
-  title: string;
+  title?: string;
   fullWidth?: true;
 }
 
@@ -17,13 +17,15 @@ const Section = ({
           fullWidth ? "relative md:mx-auto md:max-w-5xl" : ""
         }`}
       >
-        <h2
-          className={`mb-3 text-2xl font-bold tracking-tight md:mb-8 md:text-4xl ${
-            fullWidth ? "px-4 md:px-24" : ""
-          }`}
-        >
-          {title}
-        </h2>
+        {title && (
+          <h2
+            className={`mb-3 text-2xl font-bold tracking-tight md:mb-8 md:text-4xl ${
+              fullWidth ? "px-4 md:px-24" : ""
+            }`}
+          >
+            {title}
+          </h2>
+        )}
         {children}
       </div>
     </section>

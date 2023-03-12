@@ -8,8 +8,12 @@ const Testimonials = () => {
     <Section title="Testimonials" fullWidth>
       <div className="overflow-x-auto py-1 md:overflow-hidden">
         <Slider>
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.name} {...testimonial} />
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={testimonial.name}
+              index={index}
+              {...testimonial}
+            />
           ))}
         </Slider>
       </div>

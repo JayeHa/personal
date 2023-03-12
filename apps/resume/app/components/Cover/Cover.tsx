@@ -2,7 +2,7 @@ const Cover = () => {
   return (
     <section className="main-section">
       <div className="mb-16 md:mb-24">
-        <h1 className="mb-4 text-4xl font-bold leading-tight tracking-tight md:mb-8 md:text-6xl">
+        <h2 className="mb-4 text-4xl font-bold leading-tight tracking-tight md:mb-8 md:text-6xl">
           👩🏻‍💻
           <br />
           안녕하세요
@@ -10,7 +10,7 @@ const Cover = () => {
           내일이 기대되는
           <br />
           개발자, 하정원입니다.
-        </h1>
+        </h2>
 
         <div className="flex flex-col gap-2">
           <p className="break-keep text-lg tracking-tight text-neutral-700 md:text-2xl md:leading-relaxed">

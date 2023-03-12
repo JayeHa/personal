@@ -1,6 +1,6 @@
 import { AvatarYuraSeo } from "@assets/images";
 
-export const testimonials = [
+export const testimonials: Testimonial.VO[] = [
   {
     name: "서유라",
     jobTitle: "프로덕트(UX/UI) 디자이너",
@@ -18,7 +18,7 @@ export const testimonials = [
   {
     name: "작업중2",
     jobTitle: "개발자",
-    avatar: "https://github.com/github.png?size=48",
+    avatar: "https://github.com/JayeHa.png",
     company: "빅픽처팀",
     link: "https://www.linkedin.com/in/yullo/",
     text: `아직 하는중`,
@@ -26,7 +26,7 @@ export const testimonials = [
   {
     name: "작업중3",
     jobTitle: "개발자",
-    avatar: "https://github.com/github.png?size=48",
+    avatar: "https://github.com/github.png",
     company: "빅픽처팀",
     link: "https://www.linkedin.com/in/yullo/",
     text: `아직 하는중`,
@@ -34,7 +34,7 @@ export const testimonials = [
   {
     name: "작업중4",
     jobTitle: "개발자",
-    avatar: "https://github.com/github.png?size=48",
+    avatar: "https://github.com/github.png",
     company: "빅픽처팀",
     link: "https://www.linkedin.com/in/yullo/",
     text: `아직 하는중`,
