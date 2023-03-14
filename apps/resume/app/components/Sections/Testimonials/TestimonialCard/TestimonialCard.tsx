@@ -1,7 +1,7 @@
+import type { testimonials } from "@data/testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "~/components/Icon";
-import type { testimonials } from "../Testimonials.constants";
 
 const TestimonialCard = ({
   index,

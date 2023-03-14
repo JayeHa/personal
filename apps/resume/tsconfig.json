@@ -21,8 +21,9 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"],
-      "@assets/*": ["./assets/*"]
+      "@assets/*": ["./assets/*"],
+      "@data/*": ["./data/*"],
+      "~/*": ["./app/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

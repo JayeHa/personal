@@ -1,4 +1,4 @@
-import { testimonials } from "data/testimonials";
+import { testimonials } from "@data/testimonials";
 import Slider from "../../Slider";
 import Section from "../Section";
 import TestimonialCard from "./TestimonialCard/TestimonialCard";

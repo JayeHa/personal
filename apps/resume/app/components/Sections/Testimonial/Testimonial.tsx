@@ -1,13 +1,14 @@
-import { testimonials } from "data/testimonials";
+import { testimonials } from "@data/testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "~/components/Icon";
 import Section from "../Section";
-
 import { Pagination } from "./Pagination";
 import type { TestimonialProps } from "./Testimonial.types";
 
 const Testimonial = ({ index }: TestimonialProps) => {
+  if (!testimonials[index]) return null;
+
   const { avatar, company, jobTitle, link, name, text } = testimonials[index];
 
   return (
