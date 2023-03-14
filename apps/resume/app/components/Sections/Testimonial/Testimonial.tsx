@@ -1,8 +1,9 @@
+import { testimonials } from "data/testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "~/components/Icon";
 import Section from "../Section";
-import { testimonials } from "../Testimonials/Testimonials.constants";
+
 import { Pagination } from "./Pagination";
 import type { TestimonialProps } from "./Testimonial.types";
 
@@ -11,7 +12,7 @@ const Testimonial = ({ index }: TestimonialProps) => {
 
   return (
     <Section>
-      <div className="flex flex-col items-center gap-10">
+      <div className="flex min-h-[70vh] flex-col items-center gap-10">
         <header className="flex w-full">
           <Link href="/" className="relative -bottom-3">
             <Icon className="fill-gray-800" name="ChevronLeft" width={38} />
@@ -44,8 +45,8 @@ const Testimonial = ({ index }: TestimonialProps) => {
           </div>
         </header>
 
-        <div className="flex w-full flex-col items-center gap-10">
-          <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-full shadow-lg md:h-56 md:w-56">
+        <div className="flex w-full flex-1 flex-col items-center gap-10 md:flex-row md:items-start">
+          <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-full shadow-lg md:h-40 md:w-40">
             <Image src={avatar} alt={name} fill sizes="14rem" />
           </div>
 
@@ -53,11 +54,11 @@ const Testimonial = ({ index }: TestimonialProps) => {
             {text}
           </p>
         </div>
-      </div>
 
-      <footer className="mt-16">
-        <Pagination current={index} total={testimonials.length} />
-      </footer>
+        <footer className="mt-8 w-full">
+          <Pagination current={index} total={testimonials.length} />
+        </footer>
+      </div>
     </Section>
   );
 };
