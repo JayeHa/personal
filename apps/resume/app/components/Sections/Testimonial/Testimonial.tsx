@@ -3,6 +3,7 @@ import Link from "next/link";
 import Icon from "~/components/Icon";
 import Section from "../Section";
 import { testimonials } from "../Testimonials/Testimonials.constants";
+import { Pagination } from "./Pagination";
 import type { TestimonialProps } from "./Testimonial.types";
 
 const Testimonial = ({ index }: TestimonialProps) => {
@@ -54,40 +55,8 @@ const Testimonial = ({ index }: TestimonialProps) => {
         </div>
       </div>
 
-      <footer className="mt-16 flex justify-between">
-        <div>
-          {index > 0 && (
-            <Link href={`/testimonial/${index - 1}`}>
-              <div className="flex">
-                <Icon
-                  className="fill-gray-800"
-                  name="ChevronLeft"
-                  width={24}
-                  height={24}
-                />
-                <span>이전 페이지</span>
-              </div>
-            </Link>
-          )}
-        </div>
-        <div>
-          <Link href="/">홈으로</Link>
-        </div>
-        <div>
-          {index + 1 < testimonials.length - 1 && (
-            <Link href={`/testimonial/${index + 1}`}>
-              <div className="flex">
-                <span>다음 페이지</span>
-                <Icon
-                  className="-scale-x-100 fill-gray-800"
-                  name="ChevronLeft"
-                  width={24}
-                  height={24}
-                />
-              </div>
-            </Link>
-          )}
-        </div>
+      <footer className="mt-16">
+        <Pagination current={index} total={testimonials.length} />
       </footer>
     </Section>
   );
