@@ -8,6 +8,13 @@ export default function Head() {
         rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>👩🏻‍💻</text></svg>"
       />
+
+      <meta property="og:title" content="하정원 | 이력서" />
+      <meta
+        property="og:description"
+        content="내일이 기대되는 개발자, 하정원입니다."
+      />
+      <meta property="og:image" content="https://github.com/JayeHa.png" />
     </>
   );
 }
