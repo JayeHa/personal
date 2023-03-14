@@ -1,7 +1,7 @@
+import { testimonials } from "data/testimonials";
 import Slider from "../../Slider";
 import Section from "../Section";
 import TestimonialCard from "./TestimonialCard/TestimonialCard";
-import { testimonials } from "./Testimonials.constants";
 
 const Testimonials = () => {
   return (
