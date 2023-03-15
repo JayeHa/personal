@@ -1,2 +1,2 @@
-export { default as ChevronLeft } from "./chevron-left.svg";
-export { default as FormatQuote } from "./format-quote.svg";
+export { default as chevronLeft } from "./chevron-left.svg";
+export { default as formatQuote } from "./format-quote.svg";

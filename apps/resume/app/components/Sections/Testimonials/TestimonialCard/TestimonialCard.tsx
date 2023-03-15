@@ -22,7 +22,7 @@ const TestimonialCard = ({
         <Link href={`/testimonial/${index}`}>
           <Icon
             className="relative -left-1.5 rotate-180 fill-gray-600 opacity-40"
-            name="FormatQuote"
+            name="formatQuote"
             aria-hidden
           />
           <p className="whitespace-pre-line break-keep text-sm font-light leading-6 line-clamp-7">

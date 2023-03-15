@@ -11,7 +11,7 @@ const Slider = ({ children }: SliderProps) => {
     <div className="group flex md:px-24">
       {!app.isMobile && (
         <IconButton
-          icon="ChevronLeft"
+          icon="chevronLeft"
           className="absolute top-1/2 left-12 hidden -translate-y-1/2 md:group-hover:inline-flex"
           {...app.ButtonProps.LeftButton}
         />
@@ -36,7 +36,7 @@ const Slider = ({ children }: SliderProps) => {
 
       {!app.isMobile && (
         <IconButton
-          icon="ChevronLeft"
+          icon="chevronLeft"
           className=" absolute top-1/2 right-12 hidden -translate-y-1/2 -scale-x-100 md:group-hover:inline-flex"
           {...app.ButtonProps.RightButton}
         />

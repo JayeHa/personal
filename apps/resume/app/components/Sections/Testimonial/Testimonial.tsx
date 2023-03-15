@@ -16,7 +16,7 @@ const Testimonial = ({ index }: TestimonialProps) => {
       <div className="flex min-h-[70vh] flex-col items-center gap-10">
         <header className="flex w-full">
           <Link href="/" className="relative -bottom-3">
-            <Icon className="fill-gray-800" name="ChevronLeft" width={38} />
+            <Icon className="fill-gray-800" name="chevronLeft" width={38} />
           </Link>
 
           <div>

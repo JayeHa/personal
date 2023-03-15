@@ -29,7 +29,7 @@ const Pagination = ({ current, total }: PaginationProps) => {
       <PageLink link={pageInfo.prev.link} disabled={pageInfo.prev.disabled}>
         <Icon
           className="fill-gray-800"
-          name="ChevronLeft"
+          name="chevronLeft"
           width={24}
           height={24}
         />
@@ -42,7 +42,7 @@ const Pagination = ({ current, total }: PaginationProps) => {
         <span>{pageInfo.next.text}</span>
         <Icon
           className="-scale-x-100 fill-gray-800"
-          name="ChevronLeft"
+          name="chevronLeft"
           width={24}
           height={24}
         />
