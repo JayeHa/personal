@@ -1,5 +1,5 @@
+import { workExperiences } from "@data/workExperience";
 import Section from "../Section";
-import { workExperiences } from "./WorkExperience.constants";
 import WorkExperienceCard from "./WorkExperienceCard";
 
 const WorkExperience = () => {
