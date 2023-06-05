@@ -2,7 +2,7 @@ export const workExperiences = [
   {
     companyName: "빅픽처팀",
     url: "http://bigpicture.team/",
-    period: "2022.10 - 현재",
+    period: "2022.10 - 2023.4",
     projects: [
       {
         title: "몰라몰라 개복치",
