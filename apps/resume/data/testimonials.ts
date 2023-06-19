@@ -53,7 +53,7 @@ export const testimonials: Testimonial.VO[] = [
     name: "박찬혁",
     jobTitle: "프론트엔드 개발자",
     avatar: "https://github.com/ChanhyukPark-Tech.png",
-    company: "에이플러스비",
+    company: "토스페이먼츠",
     link: "https://github.com/ChanhyukPark-Tech",
     text: `하정원 님은 시켜서 하는 개발자가 아닌, 해야 하는 일을 발굴하는 개발자입니다.
 
