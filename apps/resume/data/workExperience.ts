@@ -1,5 +1,22 @@
 export const workExperiences = [
   {
+    companyName: "진보상사",
+    url: "https://www.findcompany.kr/pages/info.php?encBizNo=rOX%2FjPOdf5%2BQk0oPK8yaNg%3D%3D&idx=545068",
+    period: "2023.05 - 현재",
+    projects: [
+      {
+        title: "진보상사 물류서비스",
+        subtitle: "",
+        skills: ["Next.js", "TypeScript", "React-query", "emotion"],
+        description: [
+          "프론트엔드 인터페이스 구현",
+          "테이블 컴포넌트 구현",
+          "사용자관리, 견적품 공정관리, 창고관리 등 페이지 작업",
+        ],
+      },
+    ],
+  },
+  {
     companyName: "빅픽처팀",
     url: "http://bigpicture.team/",
     period: "2022.10 - 2023.4",
@@ -11,7 +28,7 @@ export const workExperiences = [
         skills: [
           "Next.js",
           "TypeScript",
-          "Recoil",
+          "zustand",
           "React-query",
           "Styled-component",
         ],
