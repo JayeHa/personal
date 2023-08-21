@@ -52,9 +52,9 @@ export const testimonials: Testimonial.VO[] = [
   {
     name: "박찬혁",
     jobTitle: "프론트엔드 개발자",
-    avatar: "https://github.com/ChanhyukPark-Tech.png",
+    avatar: "https://github.com/okinawaa.png",
     company: "토스페이먼츠",
-    link: "https://github.com/ChanhyukPark-Tech",
+    link: "https://github.com/okinawaa",
     text: `하정원 님은 시켜서 하는 개발자가 아닌, 해야 하는 일을 발굴하는 개발자입니다.
 
     정원 님이랑 프론트엔드 협업을 많이 진행했을 때 개발자로서 편안함을 느꼈습니다. "정원님 이 컴포넌트 구현 부탁드려요"라고 요청을 드리면, 컴포넌트 구현은 당연히 완벽하게 구현 뒤, 그 컴포넌트를 확인할 수 있는 시스템까지 구축하는 개발자였습니다. "요구사항"만 만족시키고 끝이 아닌, 더 좋게 더 효율적으로 협업할 수 있는 방향을 아는 개발자입니다.
