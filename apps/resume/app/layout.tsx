@@ -13,7 +13,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="py-12 md:py-32">
+      <body className="py-12 md:py-20">
         <h1 className="sr-only">하정원의 이력서</h1>
         {children}
       </body>
