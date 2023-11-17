@@ -1,7 +1,7 @@
 type Project = {
   title: string;
   url?: string;
-  subtitle: string;
+  subtitle?: string;
   skills: string[];
   description: string[];
 };
