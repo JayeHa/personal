@@ -8,9 +8,9 @@ export const workExperiences = [
         title: "재고관리 서비스",
         skills: ["Next.js", "TypeScript", "React-query", "Zustand", "emotion"],
         description: [
-          "Table 컴포넌트를 ContextAPI로 리펙토링하여 개발시간 50% 단축",
-          "불필요한 전역상태 제거 및 스프린트 도입으로 업무 효율성 증대",
-          "기획 단계에서의 요구사항 변경이 잦아짐에 따라 Jest를 활용한 테스트 코드를 도입하여 프로젝트의 안정성 향상",
+          "컴포넌트 설계 및 최적화",
+          "프로젝트 관리 및 협업 촉진",
+          "테스트 프로세스 도입",
         ],
       },
     ],
@@ -45,8 +45,6 @@ export const workExperiences = [
           "Styled-component",
         ],
         description: [
-          "SSR환경에서 Toast WYSIWYG 설정",
-          "무한스크롤 기능 구현",
           "사용자 경험 개선을 위한 인게임 페이지 구현",
           "다국어 지원 대응 🇰🇷🇬🇧",
         ],
@@ -79,7 +77,7 @@ export const workExperiences = [
         url: "https://coding-x.com/",
         skills: ["EJS", "Javascript", "SCSS"],
         description: [
-          "디자인 시스템 구축 및 시맨틱, 반응형 디자인 구현을 통한 Lighthouse 점수 향상 (Accessibility 93점, SEO 100점, Performance 98점)",
+          "디자인 시스템 구축 및 시맨틱, 반응형 디자인 구현을 통한 Lighthouse 점수 향상",
           "영상 플레이룸, 수료증 기능, Zoom 연동, 이벤트 홍보용 웹사이트 개발",
         ],
       },
