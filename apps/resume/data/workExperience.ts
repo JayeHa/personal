@@ -6,11 +6,18 @@ export const workExperiences = [
     projects: [
       {
         title: "재고관리 서비스",
-        skills: ["Next.js", "TypeScript", "React-query", "Zustand", "emotion"],
+        skills: [
+          "Next.js",
+          "TypeScript",
+          "React-query",
+          "Zustand",
+          "emotion",
+          "Jest",
+          "React Testing Library",
+        ],
         description: [
-          "컴포넌트 설계 및 최적화",
-          "프로젝트 관리 및 협업 촉진",
-          "테스트 프로세스 도입",
+          "커스텀 테이블 컴포넌트 설계",
+          "테스트 프로세스 도입 및 리펙토링",
         ],
       },
     ],
@@ -22,15 +29,10 @@ export const workExperiences = [
     projects: [
       {
         title: "몰라몰라 개복치",
-        skills: [
-          "Next.js",
-          "TypeScript",
-          "zustand",
-          "React-query",
-          "Styled-component",
-        ],
+        skills: ["Next.js", "TypeScript", "zustand", "React-query", "emotion"],
         description: [
-          "초기 디자인시스템 구축 및 공통 컴포넌트 개발 주도",
+          "디자인시스템 구축 및 공통 컴포넌트 개발 주도",
+          "비동기 처리 개선",
           "유형 테스트 템플릿 개발 및 구현",
         ],
       },
@@ -61,8 +63,8 @@ export const workExperiences = [
           "Styled-component",
         ],
         description: [
-          "컴포지션(composition) 방식 도입 및 기존 컴포넌트 리펙토링",
           "Utility Type을 활용한 프로젝트의 타입 강화",
+          "기존 컴포넌트 리펙토링",
         ],
       },
     ],
@@ -77,7 +79,8 @@ export const workExperiences = [
         url: "https://coding-x.com/",
         skills: ["EJS", "Javascript", "SCSS"],
         description: [
-          "디자인 시스템 구축 및 시맨틱, 반응형 디자인 구현을 통한 Lighthouse 점수 향상",
+          "디자인 시스템 구축",
+          "시맨틱, 반응형 디자인 구현을 통한 Lighthouse 점수 향상",
           "영상 플레이룸, 수료증 기능, Zoom 연동, 이벤트 홍보용 웹사이트 개발",
         ],
       },
